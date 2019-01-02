@@ -1,0 +1,2 @@
+# .gitattributes file
+hibernate.cfg.xml filter=updateConnectionUrl
