@@ -22,7 +22,7 @@ public class BlogPostsTests {
 
     RestTemplate restTemplate = new RestTemplate();
     ObjectMapper objectMapper = new ObjectMapper();
-
+/*
     @Test
     public void saveBlogPost() {
 
@@ -76,4 +76,5 @@ public class BlogPostsTests {
               System.out.println(bp.getOwner() + ", " + bp.getContent() + ", " + bp.getGraph_url() + " ," + bp.getCreationDate());
         }
     }
+    */
 }
