@@ -17,12 +17,12 @@ import java.util.*;
 
 public class BlogPostsTests {
 
-    public static final String REST_USERS_URI = "http://localhost:8080/api/users";
-    public static final String REST_BLOGPOSTS_URI = "http://localhost:8081/api/blogposts";
+    public static final String REST_USERS_URI = "http://192.168.99.100:8080/api/users";
+    public static final String REST_BLOGPOSTS_URI = "http://192.168.99.100:8081/api/blogposts";
 
     RestTemplate restTemplate = new RestTemplate();
     ObjectMapper objectMapper = new ObjectMapper();
-/*
+
     @Test
     public void saveBlogPost() {
 
@@ -41,7 +41,7 @@ public class BlogPostsTests {
             }
         }
     }
-
+/*
     @Test
     public void saveGraphBlogPost() {
         BlogPostDto blogPost = new BlogPostDto();
@@ -62,7 +62,7 @@ public class BlogPostsTests {
             }
         }
     }
-
+*/
     @Test
     @SuppressWarnings("unchecked")
     public void getBlogPostsForUser() {
@@ -76,5 +76,4 @@ public class BlogPostsTests {
               System.out.println(bp.getOwner() + ", " + bp.getContent() + ", " + bp.getGraph_url() + " ," + bp.getCreationDate());
         }
     }
-    */
 }

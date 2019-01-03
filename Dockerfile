@@ -1,4 +1,6 @@
 FROM tomee:latest
-EXPOSE 8080
-RUN rm -fr /usr/local/tomee/webapps/rest
-COPY target/rest.war $CATALINA_HOME/webapps/
+MAINTAINER Sebastian Löfstrand <selo@kth.se>
+
+RUN rm -fr /usr/local/tomee/webapps/ROOT
+COPY target/rest.war /usr/local/tomee/webapps/ROOT.war
+CMD ["catalina.sh", "run"]
